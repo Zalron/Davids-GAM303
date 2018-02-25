@@ -6,7 +6,7 @@ using UnityEngine;
 public class Basket : MonoBehaviour
 {
     public Text scoreCounter;
-    public int scoreNum;
+    public int scoreNum = 0;
     void Start () // Use this for initialization
     {
         
@@ -29,8 +29,13 @@ public class Basket : MonoBehaviour
         if (collidedWith.tag == "Apple")
         {
             Destroy(collidedWith);
-            scoreNum += 100;
-            scoreCounter.text = scoreNum.ToString();
+            scoreNum += 100; //Add points for catching the apple
+            scoreCounter.text = "Score: " + scoreNum.ToString(); // Convert the score back to a string and display it
+            HighScore.score = scoreNum;
+            if (scoreNum > HighScore.score) // Track the high score
+            {
+                HighScore.score = scoreNum;
+            }
         }
     }
 }
