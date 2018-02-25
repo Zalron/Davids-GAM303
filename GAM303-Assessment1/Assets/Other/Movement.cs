@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
 	{
 		if(Input.GetKeyDown(KeyCode.W))
 		{
-			transform.position += (Vector3.forward)*movementSpeed;
+			transform.position += (Vector3.up)*movementSpeed;
 		}
 		if(Input.GetKeyDown(KeyCode.A))
 		{
@@ -22,7 +22,7 @@ public class Movement : MonoBehaviour
 		}
 		if(Input.GetKeyDown(KeyCode.D))
 		{
-			transform.position += (Vector3.back)*movementSpeed;
+			transform.position += (Vector3.down)*movementSpeed;
 		}
 		if(Input.GetKeyDown(KeyCode.S))
 		{

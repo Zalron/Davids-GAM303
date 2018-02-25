@@ -11,9 +11,8 @@ public class AppleTree : MonoBehaviour
     public float secondsBetweenAppleDrops = 1f; // Rate at whiich Apples will be instantiated
     void Start () // Use this for initialization
     {
-		//Dropping Apples every second
-		InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrops);
-	}
+		InvokeRepeating("DropApple", 2f, secondsBetweenAppleDrops); //Dropping Apples every second
+    }
 	void Update () // Update is called once per frame
     {
         //Basic Movement
@@ -39,7 +38,7 @@ public class AppleTree : MonoBehaviour
     }
 	void DropApple()
 	{
-		GameObject apple = Instantiate (applePrefab) as GameObject;
-		apple.transform.position = transform.position;
+		GameObject Apple = Instantiate (applePrefab) as GameObject;
+		Apple.transform.position = transform.position;
 	}
 }
