@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
-public class EasyStartButton : MonoBehaviour 
+public class HardStartButton : MonoBehaviour 
 {
-	public void PlayEasy()
+	public void PlayHard()
 	{
-		SceneManager.LoadScene("_Scene_0");
+		SceneManager.LoadScene("_Scene_1");
 	}
 }

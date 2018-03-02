@@ -1,16 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine;
 
 public class Basket : MonoBehaviour
 {
+    HighScore HS;
     public Text scoreCounter;
     public int scoreNum = 0;
-    void Start () // Use this for initialization
-    {
-        
-	}
 	void Update () // Update is called once per frame
     {
         
@@ -21,6 +19,10 @@ public class Basket : MonoBehaviour
         Vector3 pos = this.transform.position;
         pos.x = mousePos3D.x;
         this.transform.position = pos;
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("_Scene_Start");
+        }
 	}
     void OnCollisionEnter(Collision coll)
     {
@@ -35,7 +37,7 @@ public class Basket : MonoBehaviour
             HighScore.score = scoreNum;
             if (scoreNum > HighScore.score) // Track the high score
             {
-                HighScore.score = scoreNum;
+                HighScore.score =  scoreNum;
             }
         }
     }
