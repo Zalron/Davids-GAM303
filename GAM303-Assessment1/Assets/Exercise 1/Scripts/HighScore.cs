@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class HighScore : MonoBehaviour
 {
-    public static int score = 1000;
+    public static int score = 100;
     public GameObject HighScoreObject;
     public Text highScoreText;
 	public void Awake () // Use this for initialization
@@ -22,7 +22,7 @@ public class HighScore : MonoBehaviour
         highScoreText.text = "High Score: " + score;
         if (score>PlayerPrefs.GetInt("ApplePickerHighScore")) // Update ApplePickerHighScore in PlayerPrefs if necessary
         {
-            PlayerPrefs.SetInt("ApplePcikerHgihScore", score);
+            PlayerPrefs.SetInt("ApplePickerHighScore", score);
         }
 	}
 }

@@ -314,9 +314,9 @@ RectTransform:
   m_Father: {fileID: 1264726343}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 463, y: -89}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -80, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958380394
@@ -421,12 +421,12 @@ Prefab:
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: -452
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -96
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
@@ -441,22 +441,22 @@ Prefab:
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224202972511950986, guid: bef47737befeab842b5b085a94d62746,
         type: 2}
@@ -534,7 +534,7 @@ Canvas:
   m_GameObject: {fileID: 1264726339}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 1
+  m_RenderMode: 0
   m_Camera: {fileID: 1685991701}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
