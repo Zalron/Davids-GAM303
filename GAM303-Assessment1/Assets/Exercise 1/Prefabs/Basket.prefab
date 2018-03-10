@@ -109,3 +109,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreCounter: {fileID: 114760607464195960, guid: bef47737befeab842b5b085a94d62746,
     type: 2}
+  scoreNum: 0

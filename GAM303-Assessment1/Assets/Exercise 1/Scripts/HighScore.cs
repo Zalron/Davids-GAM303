@@ -19,7 +19,7 @@ public class HighScore : MonoBehaviour
 	}
 	public void Update () // Update is called once per frame
     {
-        highScoreText.text = "High Score: " + score;
+        highScoreText.text = "Highscore: " + score;
         if (score>PlayerPrefs.GetInt("ApplePickerHighScore")) // Update ApplePickerHighScore in PlayerPrefs if necessary
         {
             PlayerPrefs.SetInt("ApplePickerHighScore", score);

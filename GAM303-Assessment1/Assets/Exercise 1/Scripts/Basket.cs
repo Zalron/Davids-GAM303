@@ -34,7 +34,6 @@ public class Basket : MonoBehaviour
 			//GetComponent<Renderer> ().material.color = Color.red;
             scoreNum += 100; //Add points for catching the apple
             scoreCounter.text = "Score: " + scoreNum.ToString(); // Convert the score back to a string and display it
-            HighScore.score = scoreNum;
             if (scoreNum > HighScore.score) // Track the high score
             {
                 HighScore.score =  scoreNum;
